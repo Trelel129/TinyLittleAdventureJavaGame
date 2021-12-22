@@ -45,7 +45,7 @@ public class Player extends Entity {
 	public void setDefaultValues() {
 		worldX = gp.tileSize * 23;
 		worldY = gp.tileSize * 21;
-		speed = 4;
+		speed = 2;
 		direction = "down";
 	}
 	
@@ -129,7 +129,7 @@ public class Player extends Entity {
 				break;
 			case "Boots":
 				gp.playSoundEffect(2);
-				speed += 3;
+				speed += 1;
 				gp.obj[index] = null;
 				gp.ui.showMessage("SPEED UP!");
 				break;
