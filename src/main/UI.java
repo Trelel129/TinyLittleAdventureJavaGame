@@ -181,13 +181,33 @@ public class UI {
 		}
 	}
 	public void drawPauseScreen() {
-		g2.setFont(g2.getFont().deriveFont(Font.PLAIN,80F));
-		String text = "GAME PAUSED";
-		int x = getXforCenteredText(text);
-		int y = gp.screenHeight/2;
-		
-		g2.drawString(text, x, y);
-				
+		  g2.setFont(g2.getFont().deriveFont(Font.PLAIN,64F));
+		  String text = "GAME PAUSED";
+		  int x = getXforCenteredText(text);
+		  int y = gp.screenHeight/3;
+		  
+		  g2.drawString(text, x, y);
+		  
+		  g2.setFont(g2.getFont().deriveFont(Font.PLAIN,20F));
+		  text = "Press Esc to Main Menu";
+		  x = getXforCenteredText(text) - (getXforCenteredText(text)/2) - 70;
+		  y = gp.screenHeight/2;
+		  
+		  g2.drawString(text, x, y);
+		  
+		  g2.setFont(g2.getFont().deriveFont(Font.PLAIN,20F));
+		  text = "Press Q to Quit";
+		  x = getXforCenteredText(text) + (getXforCenteredText(text)/2) + 50;
+		  y = gp.screenHeight/2;
+		  
+		  g2.drawString(text, x, y);	
+		  
+		  g2.setFont(g2.getFont().deriveFont(Font.PLAIN,20F));
+		  text = "Press P to Continue";
+		  x = getXforCenteredText(text);
+		  y = gp.screenHeight/2 + 80;
+		  
+		  g2.drawString(text, x, y);
 	}
 	public void drawDialogueScreen() {
 		// Window
