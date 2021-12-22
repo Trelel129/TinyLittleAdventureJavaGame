@@ -31,8 +31,6 @@ public class GamePanel extends JPanel implements Runnable {
 	// WORLD SETTINGS
 	public final int maxWorldCol = 50;
 	public final int maxWorldRow = 50;
-//	public final int worldWidth = tileSize * maxScreenCol;
-//	public final int wolrdHeight = tileSize * maxScreenRow;
 	
 	//FPS
 	int FPS = 60;
@@ -176,5 +174,4 @@ public class GamePanel extends JPanel implements Runnable {
 		soundEffect.setFile(i);
 		soundEffect.play();
 	}
-	
 }
